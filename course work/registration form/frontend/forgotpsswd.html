@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/forgotpsswd.css">
+    <!-- Ensure correct path to the JavaScript file -->
+    <script defer src="js/forgotpsswd.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Forgot password</h1>
+
+            <p class="text">Please enter your username and select your role</p>
+
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+
+            <div class="role-selection">
+                <label>Select Role:</label>
+                <input type="radio" name="role" id="militaryRole" class="radio-input" value="military" checked="checked" />
+                <label for="militaryRole">Military</label>
+                <input type="radio" name="role" id="volunteerRole" class="radio-input" value="volunteer">
+                <label for="volunteerRole">Volunteer</label>
+            </div>
+            
+            <button type="button" id="deleteAccountButton">Delete Account</button>
+            
+        </form>
+    </div>
+</body>
+</html>

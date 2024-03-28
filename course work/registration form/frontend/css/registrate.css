@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    width: 300px;
+    margin: 13vh auto 0 auto;
+    padding: 30px;
+    background-color: whitesmoke;
+    border-radius: 16px;
+    font-size: 12px;
+}
+
+h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+.radio-input{
+    display: none;
+}
+.radio-input + label{
+    position: relative;
+    color: #203a43;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.8em;
+    border: 3px solid #203a43;
+    padding: 1em 2em;
+    border-radius: 0.7em;
+}
+.radio-input + label:before{
+    content: "";
+    height: 1em;
+    width: 1em;
+    border: 3px solid #203a43;
+    border-radius: 70%;
+}
+
+.radio-input:checked + label:before{
+    height: 1.5em;
+    width: 1.5em;
+    border: 3.5px solid #fff;
+    background-color: #203a43;
+}
+
+.radio-input:checked + label{
+    background-color: #203a43;
+    color: #fff;
+}
+ 
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+}
+.input-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 16px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 96%;
+}
+.input-control input:focus{
+    outline: 0;
+}
+.input-control.success input{
+    border-color: #0b4a13;
+}
+.input-control.error input{
+    border-color: #ff3860;
+}
+.input-control.errorr{
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 18px;
+    width: 103%;
+    color: white;
+    background-color: #203a43;
+    border: none;
+    border-radius: 16px;
+}
+
+.link{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link p a{
+    color: #000;
+    text-decoration: none;
+    
+}
+
+.link p a:hover{
+    text-decoration: underline;
+}

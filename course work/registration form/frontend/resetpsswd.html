@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/resetpsswd.css">
+    <script defer src="js/resetpsswd.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Reset password</h1>
+
+            <p class="text">Please, enter your email to reset password</p>
+
+            <div class="input-control">
+                <label for="password">Enter new password</label>
+                <input id="password" name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Confirm password</label>
+                <input id="password2" name="password2" type="password">
+                <div class="error"></div>
+            </div>
+            
+            <a href="log.html">
+                <button type="button" id="signup-button">Reset password</button>
+              </a>
+        </form>
+    </div>
+</body>
+</html>

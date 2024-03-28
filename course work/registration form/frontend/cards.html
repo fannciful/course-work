@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Cards</title> 
+    <link rel="stylesheet" href="css/cards.css"> 
+    <script src="js/cards.js"></script>
+</head> 
+<body> 
+    <section> 
+        <div class="container"> 
+            <div class="Cars front-face"> 
+                <header> 
+                    <span class="logo"> 
+                        <h5>Cars</h5> 
+                    </span> 
+                </header> 
+                <div class="card-details"> 
+                    <div class="name-number"> 
+                        <h6>Information</h6> 
+                        <h5 class="number">Choose car and send a request:</h5> 
+                        <h5 class="name">.....</h5> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="Cars back-face"> 
+                <label for="car">Select a car:</label>
+                <select id="car" name="car">
+                    <option value="Tank">Tank</option>
+                    <option value="Reconnaissance Vehicles">Reconnaissance Vehicles</option>
+                    <option value="Med cars">Med cars</option>
+                    <option value="Truck">Truck</option>
+                    <option value="Scout cars">Scout cars</option>
+                </select>
+                <label for="quantity">Select quantity:</label>
+                <input type="number" id="quantity" name="quantity">
+                <label for="address">Enter address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+                <button onclick="sendDataToServer('Cars')">Choose</button>
+            </div> 
+        </div> 
+        <div class="container"> 
+            <div class="Drones front-face"> 
+                <header> 
+                    <span class="logo"> 
+                        <h5>Drones</h5> 
+                    </span> 
+                </header> 
+                <div class="card-details"> 
+                    <div class="name-number"> 
+                        <h6>Information</h6> 
+                        <h5 class="number">Choose an amunition and send a request:</h5> 
+                        <h5 class="name">.....</h5> 
+                    </div>  
+                </div> 
+            </div> 
+            <div class="Drones back-face"> 
+                <label for="drones">Select a drone:</label>
+                <select id="drones" name="drones">
+                    <option value="Intelligence drone">Intelligence drones</option>
+                    <option value="Attack Drones">Attack Drones</option>
+                    <option value="Cargo Drones">Cargo Drones</option>
+                    <option value="Autonomous drones">Autonomous drones</option>
+                    <option value="Multipurpose Drones">Multipurpose Drones</option>
+                </select>
+                <label for="quantity">Select quantity:</label>
+                <input type="number" id="quantity" name="quantity">
+                <label for="address">Enter address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+                <button onclick="sendDataToServer('Drones')">Choose</button>
+            </div> 
+        </div> 
+        <div class="container"> 
+            <div class="Amunition front-face"> 
+                <header> 
+                    <span class="logo"> 
+                        <h5>Amunition</h5> 
+                    </span> 
+                </header> 
+ 
+                <div class="card-details"> 
+                    <div class="name-number"> 
+                        <h6>Information</h6> 
+                        <h5 class="number">Choose a drone and send a request:</h5> 
+                        <h5 class="name">.....</h5> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="Amunition back-face"> 
+                <label for="amunition">Select an amunition:</label>
+                <select id="amunition" name="amunition">
+                    <option value="Body armor">Body armor</option>
+                    <option value="Helmets">Helmets</option>
+                    <option value="Tactical accessories">Tactical accessories</option>
+                    <option value="First aid kits">First aid kits</option>
+                    <option value="Special clothes">Special clothes</option>
+                </select>
+                <label for="quantity">Select quantity:</label>
+                <input type="number" id="quantity" name="quantity">
+                <label for="address">Enter address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+                <button onclick="sendDataToServer('Amunition')">Choose</button>
+            </div> 
+        </div> 
+    </section> 
+</body> 
+</html>
